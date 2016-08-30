@@ -1,0 +1,167 @@
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.105 seconds.[0m
+[36m----  Could not Analyze  src/css_modules_tester/core.cljs  ----[0m
+
+  [1mNo such namespace: rum.core, could not locate rum/core.cljs, rum/core.cljc, or Closure namespace "rum.core" [0m
+
+[36m----  Analysis Error : Please see src/css_modules_tester/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.183 seconds.[0m
+[36m----  Could not Analyze  src/css_modules_tester/core.cljs   line:10  column:1  ----[0m
+
+  [1mWrong number of args (0) passed to: core/defn--21029[0m
+
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [33m10[0m  [1m(defn )[0m
+  [0m  [0m  [33m^--- Wrong number of args (0) passed to: core/defn--21029[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m(defcard first-card[0m
+  [36m13[0m  [36m  (sab/html [:div[0m
+
+[36m----  Analysis Error : Please see src/css_modules_tester/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/css_modules_tester/core.cljs   line:13  column:34  ----[0m
+
+  [1mUse of undeclared Var css-modules-tester.core/style[0m
+
+  [36m12[0m  [36m(rum/defc test-component [][0m
+  [33m13[0m  [1m  [:div {:class-name (:container style)}[0m
+  [0m  [0m  [33m                                 ^--- Use of undeclared Var css-modules-tester.core/style[0m
+  [36m14[0m  [36m   [:h1 {:class-name (:title style)} "I am a big title"][0m
+  [36m15[0m  [36m   [:h1 {:class-name (:title2 style)} "I am smaller title"][0m
+  [36m16[0m  [36m   [:p {:class-name (:text style)}[0m
+  [36m17[0m  [36m    "Here goes some random text"]])[0m
+
+[36m----  Compiler Warning : Please see src/css_modules_tester/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/css_modules_tester/core.cljs   line:14  column:30  ----[0m
+
+  [1mUse of undeclared Var css-modules-tester.core/style[0m
+
+  [36m12[0m  [36m(rum/defc test-component [][0m
+  [36m13[0m  [36m  [:div {:class-name (:container style)}[0m
+  [33m14[0m  [1m   [:h1 {:class-name (:title style)} "I am a big title"][0m
+  [0m  [0m  [33m                             ^--- Use of undeclared Var css-modules-tester.core/style[0m
+  [36m15[0m  [36m   [:h1 {:class-name (:title2 style)} "I am smaller title"][0m
+  [36m16[0m  [36m   [:p {:class-name (:text style)}[0m
+  [36m17[0m  [36m    "Here goes some random text"]])[0m
+  [36m18[0m  [36m[0m
+  [36m19[0m  [36m(defcard first-card[0m
+
+[36m----  Compiler Warning : Please see src/css_modules_tester/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/css_modules_tester/core.cljs   line:15  column:31  ----[0m
+
+  [1mUse of undeclared Var css-modules-tester.core/style[0m
+
+  [36m12[0m  [36m(rum/defc test-component [][0m
+  [36m13[0m  [36m  [:div {:class-name (:container style)}[0m
+  [36m14[0m  [36m   [:h1 {:class-name (:title style)} "I am a big title"][0m
+  [33m15[0m  [1m   [:h1 {:class-name (:title2 style)} "I am smaller title"][0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var css-modules-tester.core/style[0m
+  [36m16[0m  [36m   [:p {:class-name (:text style)}[0m
+  [36m17[0m  [36m    "Here goes some random text"]])[0m
+  [36m18[0m  [36m[0m
+  [36m19[0m  [36m(defcard first-card[0m
+  [36m20[0m  [36m  (sab/html [:div[0m
+
+[36m----  Compiler Warning : Please see src/css_modules_tester/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/css_modules_tester/core.cljs   line:16  column:28  ----[0m
+
+  [1mUse of undeclared Var css-modules-tester.core/style[0m
+
+  [36m12[0m  [36m(rum/defc test-component [][0m
+  [36m13[0m  [36m  [:div {:class-name (:container style)}[0m
+  [36m14[0m  [36m   [:h1 {:class-name (:title style)} "I am a big title"][0m
+  [36m15[0m  [36m   [:h1 {:class-name (:title2 style)} "I am smaller title"][0m
+  [33m16[0m  [1m   [:p {:class-name (:text style)}[0m
+  [0m  [0m  [33m                           ^--- Use of undeclared Var css-modules-tester.core/style[0m
+  [36m17[0m  [36m    "Here goes some random text"]])[0m
+  [36m18[0m  [36m[0m
+  [36m19[0m  [36m(defcard first-card[0m
+  [36m20[0m  [36m  (sab/html [:div[0m
+  [36m21[0m  [36m             [:h1 "This is your first devcard!"]]))[0m
+
+[36m----  Compiler Warning : Please see src/css_modules_tester/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.271 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/css_modules_tester/core.cljs   line:14  column:34  ----[0m
+
+  [1mUse of undeclared Var css-modules-tester.core/style[0m
+
+  [36m13[0m  [36m(rum/defc test-component [][0m
+  [33m14[0m  [1m  [:div {:class-name (:container style)}[0m
+  [0m  [0m  [33m                                 ^--- Use of undeclared Var css-modules-tester.core/style[0m
+  [36m15[0m  [36m   [:h1 {:class-name (:title style)} "I am a big title"][0m
+  [36m16[0m  [36m   [:h1 {:class-name (:title2 style)} "I am smaller title"][0m
+  [36m17[0m  [36m   [:p {:class-name (:text style)}[0m
+  [36m18[0m  [36m    "Here goes some random text"]])[0m
+
+[36m----  Compiler Warning : Please see src/css_modules_tester/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/css_modules_tester/core.cljs   line:15  column:30  ----[0m
+
+  [1mUse of undeclared Var css-modules-tester.core/style[0m
+
+  [36m13[0m  [36m(rum/defc test-component [][0m
+  [36m14[0m  [36m  [:div {:class-name (:container style)}[0m
+  [33m15[0m  [1m   [:h1 {:class-name (:title style)} "I am a big title"][0m
+  [0m  [0m  [33m                             ^--- Use of undeclared Var css-modules-tester.core/style[0m
+  [36m16[0m  [36m   [:h1 {:class-name (:title2 style)} "I am smaller title"][0m
+  [36m17[0m  [36m   [:p {:class-name (:text style)}[0m
+  [36m18[0m  [36m    "Here goes some random text"]])[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defcard first-card[0m
+
+[36m----  Compiler Warning : Please see src/css_modules_tester/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/css_modules_tester/core.cljs   line:16  column:31  ----[0m
+
+  [1mUse of undeclared Var css-modules-tester.core/style[0m
+
+  [36m13[0m  [36m(rum/defc test-component [][0m
+  [36m14[0m  [36m  [:div {:class-name (:container style)}[0m
+  [36m15[0m  [36m   [:h1 {:class-name (:title style)} "I am a big title"][0m
+  [33m16[0m  [1m   [:h1 {:class-name (:title2 style)} "I am smaller title"][0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var css-modules-tester.core/style[0m
+  [36m17[0m  [36m   [:p {:class-name (:text style)}[0m
+  [36m18[0m  [36m    "Here goes some random text"]])[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defcard first-card[0m
+  [36m21[0m  [36m  (sab/html [:div[0m
+
+[36m----  Compiler Warning : Please see src/css_modules_tester/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/css_modules_tester/core.cljs   line:17  column:28  ----[0m
+
+  [1mUse of undeclared Var css-modules-tester.core/style[0m
+
+  [36m13[0m  [36m(rum/defc test-component [][0m
+  [36m14[0m  [36m  [:div {:class-name (:container style)}[0m
+  [36m15[0m  [36m   [:h1 {:class-name (:title style)} "I am a big title"][0m
+  [36m16[0m  [36m   [:h1 {:class-name (:title2 style)} "I am smaller title"][0m
+  [33m17[0m  [1m   [:p {:class-name (:text style)}[0m
+  [0m  [0m  [33m                           ^--- Use of undeclared Var css-modules-tester.core/style[0m
+  [36m18[0m  [36m    "Here goes some random text"]])[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defcard first-card[0m
+  [36m21[0m  [36m  (sab/html [:div[0m
+  [36m22[0m  [36m             [:h1 "This is your first devcard!"]]))[0m
+
+[36m----  Compiler Warning : Please see src/css_modules_tester/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 2.444 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.239 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.302 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.647 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.208 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
