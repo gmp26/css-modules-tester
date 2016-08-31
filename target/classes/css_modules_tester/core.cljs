@@ -2,38 +2,46 @@
   (:require
     [cljs-css-modules.macro :refer-macros [defstyle]]
     [rum.core :as rum]
-    [sablono.core :as sab :include-macros true])
+    [sablono.core :as sab :include-macros true]
+    [scoped-selectors.demo :refer [scoped-selectors-demo]])
   (:require-macros
     [devcards.core :as dc :refer [defcard deftest]]))
 
 (enable-console-print!)
 
-(defstyle style
-          [[".container" {:background-color "blue"
-                          :font-size 55}
-            [:a {:color "green"}]
-            [:&:hover {:background-color "black"}]]
+(defstyle stylish
+  [[".container" {:background-color "blue"
+                  :font-size        "55px"
+                  }
+    [:a {:color "green"}]
+    [:&:hover {:background-color "black"}]]
 
-           [".text" {:font-size 14
-                     :color "brown"}]
+   [".text" {:font-size "14px"
+             :color     "yellow"}]
 
-           [".title" {:background-color "blue"
-                      :font-size 60}]
+   [".title" {:background-color "pink"
+              :font-size        "40px"}]
 
-           [".title2" {:font-size 40
-                       :color "red"}]])
+   [".title2" {:font-size "20px"
+               :color     "white"}]])
 
 (rum/defc test-component []
-  [:div {:class-name (:container style)}
-   [:h1 {:class-name (:title style)} "I am a big title"]
-   [:h1 {:class-name (:title2 style)} "I am smaller title"]
-   [:p {:class-name (:text style)}
+  [:div {:class-name (:container stylish)}
+   [:h1 {:class-name (:title stylish)} "I am a big title"]
+   [:h1 {:class-name (:title2 stylish)} "I am smaller title"]
+   [:p {:class-name (:text stylish)}
     "Here goes some random text"]])
 
 (defcard first-card
   (sab/html [:div
              [:h1 "This is your first devcard!"]]))
 
+(defcard css-modules
+  (test-component)
+  )
+
+(defcard css-modules-webpack-clone
+  (scoped-selectors-demo))
 
 
 (defn main []
