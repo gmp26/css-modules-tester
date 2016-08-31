@@ -32,15 +32,15 @@
    [:p {:class-name (:text stylish)}
     "Here goes some random text"]])
 
-(defcard first-card
+#_(defcard first-card
   (sab/html [:div
              [:h1 "This is your first devcard!"]]))
 
-(defcard css-modules
+#_(defcard css-modules
   (test-component)
   )
 
-(defcard css-modules-webpack-clone
+(defcard scoped-selectors
   (scoped-selectors-demo))
 
 
