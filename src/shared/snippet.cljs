@@ -17,13 +17,6 @@
 
    [".outputContent" {:padding "40px 30px"}]
 
-   [".file" {:background    "#003957"
-             :color         "rgba (255, 255, 255, 0.9)"
-             :max-width     "700px"
-             :border-radius "10px"
-             :margin-bottom "20px"
-             }]
-
    [".fileName" {
                  :background    "#011E2D"
                  :color         "#00B37D"
@@ -31,15 +24,9 @@
                  :border-radius " 10px 10px 0 0"
                  }]
 
-   [".pre" {
-            :overflow    "auto"
-            :font-family "menlo, consolas, monospace"
-            :font-size   "14px"
-            :line-height "20px"
-            :padding     "5px 20px 20px"
-            }]])
+   ])
 
-(rum/defc snippet [files children]
+(rum/defc snippet [children]
   [:div {:class-name (:root styles)}
    [:div {:class-name (:output styles)}
     [:div {:class-name (:fileName styles)} "Output"]

@@ -3,7 +3,8 @@
     [cljs-css-modules.macro :refer-macros [defstyle]]
     [rum.core :as rum]
     [sablono.core :as sab :include-macros true]
-    [scoped-selectors.demo :refer [scoped-selectors-demo]])
+    [scoped-selectors.demo :refer [scoped-selectors-demo]]
+    [scoped-selectors.core :refer [scoped-selector]])
   (:require-macros
     [devcards.core :as dc :refer [defcard deftest]]))
 
@@ -40,8 +41,19 @@
   (test-component)
   )
 
+(defcard scoped-selector-in-snippet
+  "```
+(ns shared.snippet\n(:require [rum.core :as rum]\n          [scoped-selectors.core :refer [scoped-selector]]\n          [cljs-css-modules.macro :refer-macros [defstyle]]))\n\n(defstyle styles\n  [[\".root\" {:margin-top \"32px\"}]\n\n   [\".output\" {\n               :background       \"white\"\n               :color            \"#333\"\n               :max-width        \"700px\"\n               :border-radius    \"10px\"\n               :margin-bottom    \"20px\"\n               :border           \"1px solid #003957\"\n               :border-top-width 0\n               }]\n\n   [\".outputContent\" {:padding \"40px 30px\"}]\n   \n   [\".fileName\" {\n                 :background    \"#011E2D\"\n                 :color         \"#00B37D\"\n                 :padding       \"10px 20px\"\n                 :border-radius \" 10px 10px 0 0\"\n                 }]\n\n   ])\n\n(rum/defc snippet [children]\n  [:div {:class-name (:root styles)}\n   [:div {:class-name (:output styles)}\n    [:div {:class-name (:fileName styles)} \"Output\"]\n    [:div {:class-name (:outputContent styles)}\n     (for [child children] (child))]]])\n
+(snippet [scoped-selector])
+```"
+  (scoped-selectors-demo)
+  )
+
 (defcard scoped-selectors
-  (scoped-selectors-demo))
+  "```clojure
+(ns scoped-selectors.core\n(:require [rum.core :as rum]\n          [cljs-css-modules.macro :refer-macros [defstyle]]))\n\n(defstyle styles\n  [[\".root\" {\n             :border-width \"2px\"\n             :border-style \"solid\"\n             :border-color \"#777\"\n             :padding      \"0 20px\"\n             :margin0      \"6px\"\n             :max-width    \"400px\"\n             }]\n\n   [\".text\" {\n             :color                 \"#777\"\n             :font-size             \"24px\"\n             :font-familyhelvetica, \"arial, sans-serif\"\n             :font-weight           \"600\"\n             }]])\n\n(rum/defc scoped-selector []\n  [:div {:class-name (:root styles)}\n   [:p {:class-name (:text styles)} \"Scoped Selectors\"]])\n
+  ```"
+  (scoped-selector))
 
 
 (defn main []

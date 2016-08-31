@@ -5,7 +5,4 @@
 
 (rum/defc scoped-selectors-demo []
   [:div "Scoped Selectors Demo"]
-  (snippet [{:name "ScopedSelectors.js" :source "js"}
-            {:name "ScopedSelectors.css"} :source "css"]
-           [scoped-selector]
-           ))
+  (snippet [scoped-selector]))
