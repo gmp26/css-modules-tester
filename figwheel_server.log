@@ -67,3 +67,725 @@ notifying browser that file changed:  out/css_modules_tester/core.js
 [32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.15 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
 notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.156 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.161 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.189 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.148 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.157 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.14 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.037 seconds.[0m
+[36m----  Could not Analyze  src/global_selectors/core.cljs   line:1  column:1  ----[0m
+
+  [1mLibrary name must be specified as a symbol in :require / :require-macros; offending spec: [:rum.core :as rum] at line 1 src/global_selectors/core.cljs[0m
+
+  [33m1[0m  [1m(ns global-selectors.core[0m
+  [0m [0m  [33m^--- Library name must be specified as a symbol in :require / :require-macros; offending spec: [:rum.core :as rum] at line 1 src/global_selectors/core.cljs[0m
+  [36m2[0m  [36m  (:require [:rum.core :as rum][0m
+  [36m3[0m  [36m            [cljs-css-modules.macro :refer-macros [defstyle]]))[0m
+
+[36m----  Analysis Error : Please see src/global_selectors/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.162 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/global_selectors/core.cljs   line:8  column:16  ----[0m
+
+  [1mUse of undeclared Var global-selectors.core/styles[0m
+
+  [36m7[0m  [36m(rum/defc global-selector [][0m
+  [33m8[0m  [1m  [:div {:root styles}[0m
+  [0m [0m  [33m               ^--- Use of undeclared Var global-selectors.core/styles[0m
+  [36m9[0m  [36m   [:p {::text styles} "Global Selectors"]])[0m
+
+[36m----  Compiler Warning : Please see src/global_selectors/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/global_selectors/core.cljs   line:9  column:16  ----[0m
+
+  [1mUse of undeclared Var global-selectors.core/styles[0m
+
+  [36m7[0m  [36m(rum/defc global-selector [][0m
+  [36m8[0m  [36m  [:div {:root styles}[0m
+  [33m9[0m  [1m   [:p {::text styles} "Global Selectors"]])[0m
+  [0m [0m  [33m               ^--- Use of undeclared Var global-selectors.core/styles[0m
+
+[36m----  Compiler Warning : Please see src/global_selectors/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.24 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.106 seconds.[0m
+[36m----  Could not Read  src/global_selectors/core.cljs   line:7  column:24  ----[0m
+
+  [1mInvalid token: border-width:[0m
+
+  [36m 5[0m  [36m(defstyle styles[0m
+  [36m 6[0m  [36m  [".root" {[0m
+  [33m 7[0m  [1m          border-width: 2px                                 ;[0m
+  [0m  [0m  [33m                       ^--- Invalid token: border-width:[0m
+  [36m 8[0m  [36m          border-style: solid                               ;[0m
+  [36m 9[0m  [36m          border-color: brown                               ;[0m
+  [36m10[0m  [36m          padding:      0 20px                              ;[0m
+
+[36m----  Reader Error : Please see src/global_selectors/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.145 seconds.[0m
+[36m----  Could not Analyze  src/global_selectors/core.cljs   line:5  column:1  ----[0m
+
+  [1mWrong number of args (3) passed to: macro/defstyle[0m
+
+  [36m3[0m  [36m            [cljs-css-modules.macro :refer-macros [defstyle]]))[0m
+  [36m4[0m  [36m[0m
+  [33m5[0m  [1m(defstyle styles[0m
+  [0m [0m  [33m^--- Wrong number of args (3) passed to: macro/defstyle[0m
+  [36m6[0m  [36m  [".root"[0m
+  [36m7[0m  [36m   {[0m
+  [36m8[0m  [36m    :border-width "2px"[0m
+
+[36m----  Analysis Error : Please see src/global_selectors/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.176 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.184 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/css_modules_tester/core.cljs   line:59  column:4  ----[0m
+
+  [1mUse of undeclared Var css-modules-tester.core/global-selectors[0m
+
+  [36m55[0m  [36m  ```"[0m
+  [36m56[0m  [36m  (scoped-selector))[0m
+  [36m57[0m  [36m[0m
+  [36m58[0m  [36m(defcard global-selectors[0m
+  [33m59[0m  [1m  (global-selectors))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var css-modules-tester.core/global-selectors[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(defn main [][0m
+  [36m62[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+  [36m63[0m  [36m  ;; node is on the page[0m
+  [36m64[0m  [36m  (if-let [node (.getElementById js/document "main-app-area")][0m
+
+[36m----  Compiler Warning : Please see src/css_modules_tester/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.171 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/css_modules_tester/core.cljs   line:61  column:4  ----[0m
+
+  [1mUse of undeclared Var css-modules-tester.core/global-selectors[0m
+
+  [36m57[0m  [36m  ```"[0m
+  [36m58[0m  [36m  (scoped-selector))[0m
+  [36m59[0m  [36m[0m
+  [36m60[0m  [36m(defcard global-selectors[0m
+  [33m61[0m  [1m  (global-selectors))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var css-modules-tester.core/global-selectors[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn main [][0m
+  [36m64[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+  [36m65[0m  [36m  ;; node is on the page[0m
+  [36m66[0m  [36m  (if-let [node (.getElementById js/document "main-app-area")][0m
+
+[36m----  Compiler Warning : Please see src/css_modules_tester/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.186 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.158 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.177 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.161 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.152 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.171 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.406 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.165 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.153 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.148 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.16 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.151 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.205 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.163 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.165 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.149 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.143 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.185 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.144 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+sending changed CSS file: resources/public/css/css_modules_tester_style.css
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.218 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.143 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.151 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.138 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.144 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.158 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.137 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.137 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.151 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.137 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.142 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.136 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.155 seconds.[0m
+notifying browser that file changed:  out/global_selectors/core.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.138 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.135 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.146 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.134 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.139 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.139 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/class_composition/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.134 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/class_composition/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.129 seconds.[0m
+notifying browser that file changed:  out/class_composition/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.144 seconds.[0m
+notifying browser that file changed:  out/class_composition/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.153 seconds.[0m
+notifying browser that file changed:  out/class_composition/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.129 seconds.[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.133 seconds.[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.131 seconds.[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.193 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/shared/styles/layout.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.137 seconds.[0m
+notifying browser that file changed:  out/shared/styles/layout.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.126 seconds.[0m
+notifying browser that file changed:  out/shared/styles/layout.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.123 seconds.[0m
+notifying browser that file changed:  out/shared/styles/layout.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.146 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/shared/styles/typography.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.127 seconds.[0m
+notifying browser that file changed:  out/shared/styles/typography.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.139 seconds.[0m
+notifying browser that file changed:  out/shared/styles/typography.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.151 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/class_composition/style_b/clj.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.139 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/class_composition/style_b.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/class_composition/style_b.cljs   line:11  column:14  ----[0m
+
+  [1mUse of undeclared Var class-composition.style-b/merhe[0m
+
+  [36m 7[0m  [36m(def color {:color "blue"})[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(defstyle styles[0m
+  [36m10[0m  [36m  [[".root" (merge border-color box)][0m
+  [33m11[0m  [1m   [".text" (merhe typography color)][0m
+  [0m  [0m  [33m             ^--- Use of undeclared Var class-composition.style-b/merhe[0m
+  [36m12[0m  [36m   ])[0m
+
+[36m----  Compiler Warning : Please see src/class_composition/style_b.cljs  ----[0m
+[36m----  Compiler Warning on   src/class_composition/style_b.cljs   line:11  column:20  ----[0m
+
+  [1mUse of undeclared Var class-composition.style-b/typography[0m
+
+  [36m 7[0m  [36m(def color {:color "blue"})[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(defstyle styles[0m
+  [36m10[0m  [36m  [[".root" (merge border-color box)][0m
+  [33m11[0m  [1m   [".text" (merhe typography color)][0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var class-composition.style-b/typography[0m
+  [36m12[0m  [36m   ])[0m
+
+[36m----  Compiler Warning : Please see src/class_composition/style_b.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.153 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/class_composition/style_b.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/class_composition/style_b.cljs   line:11  column:20  ----[0m
+
+  [1mUse of undeclared Var class-composition.style-b/typography[0m
+
+  [36m 7[0m  [36m(def color {:color "blue"})[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(defstyle styles[0m
+  [36m10[0m  [36m  [[".root" (merge border-color box)][0m
+  [33m11[0m  [1m   [".text" (merge typography color)][0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var class-composition.style-b/typography[0m
+  [36m12[0m  [36m   ])[0m
+
+[36m----  Compiler Warning : Please see src/class_composition/style_b.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.235 seconds.[0m
+notifying browser that file changed:  out/class_composition/style_b.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.108 seconds.[0m
+[36m----  Could not Analyze  src/class_composition/style_b.cljs  ----[0m
+
+  [1mInvalid :refer, var shared.styles.typography/typography does not exist [0m
+
+[36m----  Analysis Error : Please see src/class_composition/style_b.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/class_composition/style_b.cljs   line:12  column:20  ----[0m
+
+  [1mUse of undeclared Var class-composition.style-b/typography[0m
+
+  [36m 8[0m  [36m(def color {:color "blue"})[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defstyle styles[0m
+  [36m11[0m  [36m  [[".root" (merge border-color box)][0m
+  [33m12[0m  [1m   [".text" (merge typography color)][0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var class-composition.style-b/typography[0m
+  [36m13[0m  [36m   ])[0m
+
+[36m----  Compiler Warning : Please see src/class_composition/style_b.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.143 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/class_composition/style_b.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.131 seconds.[0m
+notifying browser that file changed:  out/class_composition/style_b.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.286 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/class_composition/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.213 seconds.[0m
+[36m----  Could not Analyze  src/class_composition/style_a.cljs   line:15  column:1  ----[0m
+
+  [1mParameter declaration missing[0m
+
+  [36m13[0m  [36m           ])[0m
+  [36m14[0m  [36m[0m
+  [33m15[0m  [1m(rum/defc style-variant-a[0m
+  [0m  [0m  [33m^--- Parameter declaration missing[0m
+  [36m16[0m  [36m  )[0m
+
+[36m----  Analysis Error : Please see src/class_composition/style_a.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.196 seconds.[0m
+[36m----  Could not Analyze  src/class_composition/style_a.cljs   line:15  column:1  ----[0m
+
+  [1mUnsupported binding key: :div[0m
+
+  [36m13[0m  [36m           ])[0m
+  [36m14[0m  [36m[0m
+  [33m15[0m  [1m(rum/defc style-variant-a[0m
+  [0m  [0m  [33m^--- Unsupported binding key: :div[0m
+  [36m16[0m  [36m  [:div {:class-name (:root styles)}])[0m
+
+[36m----  Analysis Error : Please see src/class_composition/style_a.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.148 seconds.[0m
+[36m----  Could not Analyze  src/class_composition/style_a.cljs   line:15  column:1  ----[0m
+
+  [1mUnsupported binding key: :div[0m
+
+  [36m13[0m  [36m           ])[0m
+  [36m14[0m  [36m[0m
+  [33m15[0m  [1m(rum/defc style-variant-a[0m
+  [0m  [0m  [33m^--- Unsupported binding key: :div[0m
+  [36m16[0m  [36m  [:div {:class-name (:root styles)}[0m
+  [36m17[0m  [36m   [:p {:class-name (:text styles)} "Style Variant A"]])[0m
+
+[36m----  Analysis Error : Please see src/class_composition/style_a.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.174 seconds.[0m
+notifying browser that file changed:  out/class_composition/style_a.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.169 seconds.[0m
+notifying browser that file changed:  out/class_composition/style_b.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.179 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/class_composition/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.219 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.241 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.194 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.177 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.17 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.416 seconds.[0m
+notifying browser that file changed:  out/shared/styles/layout.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.209 seconds.[0m
+notifying browser that file changed:  out/shared/styles/layout.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.195 seconds.[0m
+notifying browser that file changed:  out/class_composition/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.169 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.173 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.161 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.187 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.167 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.154 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.155 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.16 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.169 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.158 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.144 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.155 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.161 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.164 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.166 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.316 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/composition_overrides/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.137 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/composition_overrides/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.112 seconds.[0m
+[36m----  Could not Analyze  src/composition_overrides/core.cljs   line:7  column:1  ----[0m
+
+  [1mFirst argument to defc must be a symbol[0m
+
+  [36m5[0m  [36m            [shared.styles.typography :refer [heading]]))[0m
+  [36m6[0m  [36m[0m
+  [33m7[0m  [1m(rum/defc )[0m
+  [0m [0m  [33m^--- First argument to defc must be a symbol[0m
+
+[36m----  Analysis Error : Please see src/composition_overrides/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.211 seconds.[0m
+notifying browser that file changed:  out/composition_overrides/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/composition_overrides/core.cljs   line:8  column:28  ----[0m
+
+  [1mUse of undeclared Var composition-overrides.core/styles[0m
+
+  [36m4[0m  [36m            [shared.styles.layout :refer [box]][0m
+  [36m5[0m  [36m            [shared.styles.typography :refer [heading]]))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(rum/defc composition-override [][0m
+  [33m8[0m  [1m  [:div {:classname (:root styles)}[0m
+  [0m [0m  [33m                           ^--- Use of undeclared Var composition-overrides.core/styles[0m
+  [36m9[0m  [36m   [:p {:classname (:text styles)}]])[0m
+
+[36m----  Compiler Warning : Please see src/composition_overrides/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/composition_overrides/core.cljs   line:9  column:27  ----[0m
+
+  [1mUse of undeclared Var composition-overrides.core/styles[0m
+
+  [36m5[0m  [36m            [shared.styles.typography :refer [heading]]))[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(rum/defc composition-override [][0m
+  [36m8[0m  [36m  [:div {:classname (:root styles)}[0m
+  [33m9[0m  [1m   [:p {:classname (:text styles)}]])[0m
+  [0m [0m  [33m                          ^--- Use of undeclared Var composition-overrides.core/styles[0m
+
+[36m----  Compiler Warning : Please see src/composition_overrides/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.254 seconds.[0m
+notifying browser that file changed:  out/composition_overrides/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/composition_overrides/core.cljs   line:9  column:39  ----[0m
+
+  [1mUse of undeclared Var composition-overrides.core/dotted[0m
+
+  [36m 5[0m  [36m            [shared.styles.typography :refer [heading]]))[0m
+  [36m 6[0m  [36m[0m
+  [36m 7[0m  [36m(defstyle styles [0m
+  [36m 8[0m  [36m  [[".root" (merge box {[0m
+  [33m 9[0m  [1m                        :border-style dotted[0m
+  [0m  [0m  [33m                                      ^--- Use of undeclared Var composition-overrides.core/dotted[0m
+  [36m10[0m  [36m                        :border-color green[0m
+  [36m11[0m  [36m                        })][0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m   [".text" (merge heading {[0m
+  [36m14[0m  [36m                            :font-weight 200[0m
+
+[36m----  Compiler Warning : Please see src/composition_overrides/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/composition_overrides/core.cljs   line:10  column:39  ----[0m
+
+  [1mUse of undeclared Var composition-overrides.core/green[0m
+
+  [36m 7[0m  [36m(defstyle styles [0m
+  [36m 8[0m  [36m  [[".root" (merge box {[0m
+  [36m 9[0m  [36m                        :border-style dotted[0m
+  [33m10[0m  [1m                        :border-color green[0m
+  [0m  [0m  [33m                                      ^--- Use of undeclared Var composition-overrides.core/green[0m
+  [36m11[0m  [36m                        })][0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m   [".text" (merge heading {[0m
+  [36m14[0m  [36m                            :font-weight 200[0m
+  [36m15[0m  [36m                            :color       green[0m
+
+[36m----  Compiler Warning : Please see src/composition_overrides/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/composition_overrides/core.cljs   line:15  column:42  ----[0m
+
+  [1mUse of undeclared Var composition-overrides.core/green[0m
+
+  [36m11[0m  [36m                        })][0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m   [".text" (merge heading {[0m
+  [36m14[0m  [36m                            :font-weight 200[0m
+  [33m15[0m  [1m                            :color       green[0m
+  [0m  [0m  [33m                                         ^--- Use of undeclared Var composition-overrides.core/green[0m
+  [36m16[0m  [36m                            })][0m
+  [36m17[0m  [36m   ])[0m
+  [36m18[0m  [36m[0m
+  [36m19[0m  [36m(rum/defc composition-override [][0m
+  [36m20[0m  [36m  [:div {:classname (:root styles)}[0m
+
+[36m----  Compiler Warning : Please see src/composition_overrides/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.256 seconds.[0m
+notifying browser that file changed:  out/composition_overrides/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.152 seconds.[0m
+notifying browser that file changed:  out/composition_overrides/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.153 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.357 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/composition_overrides/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.297 seconds.[0m
+notifying browser that file changed:  out/composition_overrides/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.228 seconds.[0m
+notifying browser that file changed:  out/composition_overrides/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.246 seconds.[0m
+notifying browser that file changed:  out/composition_overrides/core.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.241 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.194 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.195 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.196 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/scoped_animations/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.213 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/scoped_animations/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/scoped_animations/core.cljs   line:8  column:29  ----[0m
+
+  [1mUse of undeclared Var scoped-animations.core/styles[0m
+
+  [36m7[0m  [36m(rum/defc scoped-animations [][0m
+  [33m8[0m  [1m  [:div {:class-name (:root styles)}[0m
+  [0m [0m  [33m                            ^--- Use of undeclared Var scoped-animations.core/styles[0m
+  [36m9[0m  [36m   [:div {:class-name (:ball styles)}]])[0m
+
+[36m----  Compiler Warning : Please see src/scoped_animations/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/scoped_animations/core.cljs   line:9  column:30  ----[0m
+
+  [1mUse of undeclared Var scoped-animations.core/styles[0m
+
+  [36m7[0m  [36m(rum/defc scoped-animations [][0m
+  [36m8[0m  [36m  [:div {:class-name (:root styles)}[0m
+  [33m9[0m  [1m   [:div {:class-name (:ball styles)}]])[0m
+  [0m [0m  [33m                             ^--- Use of undeclared Var scoped-animations.core/styles[0m
+
+[36m----  Compiler Warning : Please see src/scoped_animations/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.2 seconds.[0m
+notifying browser that file changed:  out/scoped_animations/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.171 seconds.[0m
+notifying browser that file changed:  out/scoped_animations/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.19 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/shared/styles/animations.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.175 seconds.[0m
+notifying browser that file changed:  out/shared/styles/animations.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.161 seconds.[0m
+notifying browser that file changed:  out/shared/styles/animations.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.228 seconds.[0m
+notifying browser that file changed:  out/shared/styles/animations.js
+sending changed CSS file: resources/public/css/css_modules_tester_style.css
+sending changed CSS file: resources/public/css/css_modules_tester_style.css
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.168 seconds.[0m
+notifying browser that file changed:  out/shared/styles/animations.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.16 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/scoped_animations/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.187 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.215 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/scoped_animations/core.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.222 seconds.[0m
+notifying browser that file changed:  out/scoped_animations/core.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.223 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.241 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.306 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.168 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.207 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.171 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.18 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
