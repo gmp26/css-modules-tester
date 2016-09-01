@@ -2,6 +2,7 @@
   (:require
     [cljs-css-modules.macro :refer-macros [defstyle]]
     [rum.core :as rum]
+    [devcards.core :as dc :refer-macros [defcard]]
     [sablono.core :as sab :include-macros true]
     [scoped-selectors.demo :refer [scoped-selectors-demo]]
     [scoped-selectors.core :refer [scoped-selector]]
@@ -108,9 +109,10 @@ and the bounce keyframes remain global.
 
 
 (defn main []
+  (devcards.core/start-devcard-ui!)
   ;; conditionally start the app based on whether the #main-app-area
   ;; node is on the page
-  (if-let [node (.getElementById js/document "main-app-area")]
+  #_(if-let [node (.getElementById js/document "main-app-area")]
     (js/React.render (sab/html [:div "This is working"]) node)))
 
 (main)
