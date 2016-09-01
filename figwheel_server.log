@@ -789,3 +789,8 @@ notifying browser that file changed:  out/css_modules_tester/core.js
 [0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
 [32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.18 seconds.[0m
 notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.39 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/scoped_selectors/core.js
