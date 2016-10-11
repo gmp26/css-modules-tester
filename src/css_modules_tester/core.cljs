@@ -38,14 +38,6 @@
    [:p {:class-name (:text stylish)}
     "Here goes some random text"]])
 
-#_(defcard first-card
-  (sab/html [:div
-             [:h1 "This is your first devcard!"]]))
-
-#_(defcard css-modules
-  (test-component)
-  )
-
 (defcard scoped-selector-in-snippet-panel
   "```
 (ns shared.snippet\n(:require [rum.core :as rum]\n          [scoped-selectors.core :refer [scoped-selector]]\n          [cljs-css-modules.macro :refer-macros [defstyle]]))\n\n(defstyle styles\n  [[\".root\" {:margin-top \"32px\"}]\n\n   [\".output\" {\n               :background       \"white\"\n               :color            \"#333\"\n               :max-width        \"700px\"\n               :border-radius    \"10px\"\n               :margin-bottom    \"20px\"\n               :border           \"1px solid #003957\"\n               :border-top-width 0\n               }]\n\n   [\".outputContent\" {:padding \"40px 30px\"}]\n   \n   [\".fileName\" {\n                 :background    \"#011E2D\"\n                 :color         \"#00B37D\"\n                 :padding       \"10px 20px\"\n                 :border-radius \" 10px 10px 0 0\"\n                 }]\n\n   ])\n\n(rum/defc snippet [children]\n  [:div {:class-name (:root styles)}\n   [:div {:class-name (:output styles)}\n    [:div {:class-name (:fileName styles)} \"Output\"]\n    [:div {:class-name (:outputContent styles)}\n     (for [child children] (child))]]])\n

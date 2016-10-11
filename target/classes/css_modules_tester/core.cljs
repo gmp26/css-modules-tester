@@ -8,6 +8,7 @@
     [global-selectors.core :refer [global-selector]]
     [class-composition.core :refer [class-composition]]
     [composition-overrides.core :refer [composition-override]]
+    [scoped-animations.core :refer [scoped-animation]]
     )
   (:require-macros
     [devcards.core :as dc :refer [defcard deftest]]))
@@ -36,14 +37,6 @@
    [:h1 {:class-name (:title2 stylish)} "I am smaller title"]
    [:p {:class-name (:text stylish)}
     "Here goes some random text"]])
-
-#_(defcard first-card
-  (sab/html [:div
-             [:h1 "This is your first devcard!"]]))
-
-#_(defcard css-modules
-  (test-component)
-  )
 
 (defcard scoped-selector-in-snippet-panel
   "```
@@ -80,7 +73,31 @@
   (class-composition))
 
 (defcard composition-overrides
+  "Again, nothing much to it in clojure.
+```
+(ns composition-overrides.core\n(:require   [rum.core :as rum]\n            [cljs-css-modules.macro :refer-macros [defstyle]]\n            [shared.styles.layout :refer [box]]\n            [shared.styles.typography :refer [heading]]))\n\n(defstyle styles \n  [[\".root\" (merge box {:border-style \"dotted\"\n                        :border-color \"green\"})]\n\n   [\".text\" (merge heading {:font-weight 200\n                            :color       \"green\"})]])\n\n(rum/defc composition-override []\n  [:div {:class-name (:root styles)}\n   [:p {:class-name (:text styles)} \"Class Composition with Overrides\"]])```"
   (composition-override))
+
+(defcard scoped-animations
+  "This is currently a cheat as the keyframes are not localised to the component.
+
+  We should be injecting something like:
+```html
+<div class=\"ScopedAnimations__root___31A0H\">
+  <div class=\"ScopedAnimations__ball___1jrfA animations__bounce___1So7p\"></div>
+</div>
+```
+but in fact we inject:
+```html
+<div class=\"root--G__24489\">
+  <div class=\"ball--G__24489\"></div>
+</div>
+```
+and the bounce keyframes remain global.
+```clojure
+```"
+  (scoped-animation))
+
 
 (defn main []
   ;; conditionally start the app based on whether the #main-app-area
