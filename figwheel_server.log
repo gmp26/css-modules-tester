@@ -789,3 +789,31 @@ notifying browser that file changed:  out/css_modules_tester/core.js
 [0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
 [32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.18 seconds.[0m
 notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.39 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/scoped_selectors/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.231 seconds.[0m
+[36m----  Could not Analyze  src/class_composition/core.cljs  ----[0m
+
+  [1mInvalid :refer, var devcards.core/defcard does not exist [0m
+
+[36m----  Analysis Error : Please see src/class_composition/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.388 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/class_composition/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.269 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/class_composition/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.239 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.351 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
