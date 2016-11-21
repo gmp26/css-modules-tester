@@ -8,9 +8,9 @@
 (def color {:color "blue"})
 
 (defstyle styles
-  [[".root" (merge border-color box)]
-   [".text" (merge color heading)]
-   ])
+  [".root" (merge border-color box)]
+  [".text" (merge color heading)]
+  )
 
 (rum/defc style-variant-b []
   [:div {:class-name (:root styles)}

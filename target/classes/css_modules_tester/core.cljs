@@ -2,6 +2,7 @@
   (:require
     [cljs-css-modules.macro :refer-macros [defstyle]]
     [rum.core :as rum]
+    [devcards.core :as dc :refer-macros [defcard]]
     [sablono.core :as sab :include-macros true]
     [scoped-selectors.demo :refer [scoped-selectors-demo]]
     [scoped-selectors.core :refer [scoped-selector]]
@@ -16,20 +17,20 @@
 (enable-console-print!)
 
 (defstyle stylish
-  [[".container" {:background-color "blue"
-                  :font-size        "55px"
-                  }
-    [:a {:color "green"}]
-    [:&:hover {:background-color "black"}]]
+  [".container" {:background-color "blue"
+                 :font-size        "55px"
+                 }
+   [:a {:color "green"}]
+   [:&:hover {:background-color "black"}]]
 
-   [".text" {:font-size "14px"
-             :color     "yellow"}]
+  [".text" {:font-size "14px"
+            :color     "yellow"}]
 
-   [".title" {:background-color "pink"
-              :font-size        "40px"}]
+  [".title" {:background-color "pink"
+             :font-size        "40px"}]
 
-   [".title2" {:font-size "20px"
-               :color     "white"}]])
+  [".title2" {:font-size "20px"
+              :color     "white"}])
 
 (rum/defc test-component []
   [:div {:class-name (:container stylish)}
@@ -100,9 +101,10 @@ and the bounce keyframes remain global.
 
 
 (defn main []
+  (devcards.core/start-devcard-ui!)
   ;; conditionally start the app based on whether the #main-app-area
   ;; node is on the page
-  (if-let [node (.getElementById js/document "main-app-area")]
+  #_(if-let [node (.getElementById js/document "main-app-area")]
     (js/React.render (sab/html [:div "This is working"]) node)))
 
 (main)

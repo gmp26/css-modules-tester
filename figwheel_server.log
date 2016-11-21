@@ -817,3 +817,134 @@ notifying browser that file changed:  out/css_modules_tester/core.js
 [0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
 [32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.351 seconds.[0m
 notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.198 seconds.[0m
+[36m----  Could not Analyze  src/class_composition/style_a.cljs   line:10  column:1  ----[0m
+
+  [1mclojure.lang.PersistentVector cannot be cast to clojure.lang.Named[0m
+
+  [36m 8[0m  [36m(def color {:color "red"})[0m
+  [36m 9[0m  [36m[0m
+  [33m10[0m  [1m(defstyle styles[0m
+  [0m  [0m  [33m^--- clojure.lang.PersistentVector cannot be cast to clojure.lang.Named[0m
+  [36m11[0m  [36m          [[".root" (merge border-color box)][0m
+  [36m12[0m  [36m           [".text" (merge color heading)][0m
+  [36m13[0m  [36m           ])[0m
+
+[36m----  Analysis Error : Please see src/class_composition/style_a.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 1.158 seconds.[0m
+[36m----  Could not Analyze  src/css_modules_tester/core.cljs   line:19  column:1  ----[0m
+
+  [1mclojure.lang.PersistentVector cannot be cast to clojure.lang.Named[0m
+
+  [36m17[0m  [36m(enable-console-print!)[0m
+  [36m18[0m  [36m[0m
+  [33m19[0m  [1m(defstyle stylish[0m
+  [0m  [0m  [33m^--- clojure.lang.PersistentVector cannot be cast to clojure.lang.Named[0m
+  [36m20[0m  [36m  [[".container" {:background-color "blue"[0m
+  [36m21[0m  [36m                  :font-size        "55px"[0m
+  [36m22[0m  [36m                  }[0m
+
+[36m----  Analysis Error : Please see src/css_modules_tester/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.405 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 4.918 seconds.[0m
+[36m----  Could not Analyze  src/shared/snippet.cljs   line:5  column:1  ----[0m
+
+  [1mclojure.lang.PersistentVector cannot be cast to clojure.lang.Named[0m
+
+  [36m3[0m  [36m            [cljs-css-modules.macro :refer-macros [defstyle]]))[0m
+  [36m4[0m  [36m[0m
+  [33m5[0m  [1m(defstyle styles[0m
+  [0m [0m  [33m^--- clojure.lang.PersistentVector cannot be cast to clojure.lang.Named[0m
+  [36m6[0m  [36m  [[".root" {:margin-top "32px"}][0m
+  [36m7[0m  [36m[0m
+  [36m8[0m  [36m   [".output" {[0m
+
+[36m----  Analysis Error : Please see src/shared/snippet.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.147 seconds.[0m
+[36m----  Could not Analyze  src/shared/snippet.cljs   line:5  column:1  ----[0m
+
+  [1mclojure.lang.PersistentVector cannot be cast to clojure.lang.Named[0m
+
+  [36m3[0m  [36m            [cljs-css-modules.macro :refer-macros [defstyle]]))[0m
+  [36m4[0m  [36m[0m
+  [33m5[0m  [1m(defstyle styles[0m
+  [0m [0m  [33m^--- clojure.lang.PersistentVector cannot be cast to clojure.lang.Named[0m
+  [36m6[0m  [36m  [[".root" {:margin-top "32px"}][0m
+  [36m7[0m  [36m[0m
+  [36m8[0m  [36m   [".output" {[0m
+
+[36m----  Analysis Error : Please see src/shared/snippet.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.18 seconds.[0m
+[36m----  Could not Analyze  src/shared/snippet.cljs   line:5  column:1  ----[0m
+
+  [1mclojure.lang.PersistentVector cannot be cast to clojure.lang.Named[0m
+
+  [36m3[0m  [36m            [cljs-css-modules.macro :refer-macros [defstyle]]))[0m
+  [36m4[0m  [36m[0m
+  [33m5[0m  [1m(defstyle styles[0m
+  [0m [0m  [33m^--- clojure.lang.PersistentVector cannot be cast to clojure.lang.Named[0m
+  [36m6[0m  [36m  [[".root" {:margin-top "32px"}][0m
+  [36m7[0m  [36m[0m
+  [36m8[0m  [36m   [".output" {[0m
+
+[36m----  Analysis Error : Please see src/shared/snippet.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.566 seconds.[0m
+[36m----  Could not Analyze  src/composition_overrides/core.cljs   line:7  column:1  ----[0m
+
+  [1m at line 7 src/composition_overrides/core.cljs[0m
+
+  [36m5[0m  [36m            [shared.styles.typography :refer [heading]]))[0m
+  [36m6[0m  [36m[0m
+  [33m7[0m  [1m(defstyle styles [0m
+  [0m [0m  [33m^---  at line 7 src/composition_overrides/core.cljs[0m
+  [36m8[0m  [36m  [[".root" (merge box {:border-style "dotted"[0m
+  [36m9[0m  [36m                        :border-color "green"})][0m
+
+[36m----  Analysis Error : Please see src/composition_overrides/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 2.429 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/composition_overrides/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.249 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.205 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.188 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.19 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.179 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.18 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.202 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.236 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.176 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js
+[0mCompiling "resources/public/js/compiled/css_modules_tester_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/css_modules_tester_devcards.js" in 0.173 seconds.[0m
+notifying browser that file changed:  out/css_modules_tester/core.js

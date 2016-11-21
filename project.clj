@@ -7,17 +7,17 @@
   :min-lein-version "2.5.3"
 
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.8.51"]
+                 [org.clojure/clojurescript "1.9.293"]
                  [devcards "0.2.1-7"]
                  [sablono "0.7.1"]
                  [rum "0.10.6"]
-                 [cljs-css-modules "0.1.1"]
+                 [cljs-css-modules "0.2.0"]                 ;[cljs-css-modules "0.1.1"]
                  ;; need to specify this for sablono
                  ;; when not using devcards
                  [cljsjs/react "15.0.2-0"]
                  [cljsjs/react-dom "15.0.2-0"]
                  [cljsjs/react-dom-server "15.0.2-0"]
-                 [figwheel-sidecar "0.5.4-6"]
+                 [figwheel-sidecar "0.5.8"] ;[figwheel-sidecar "0.5.4-6"]
                  #_[org.omcljs/om "0.9.0"]
                  #_[reagent "0.5.1"]
 
