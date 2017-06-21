@@ -15,6 +15,4 @@ The repo is set up for figwheel devcards development in Intellij. If you use a d
 
 ### Conclusions
 
-https://github.com/matthieu-beteille/cljs-css-modules works fine. Tests exists and pass. I'm not sure I would need a compose feature. I can see that localised keyframes would be good in some contexts, but it's not a deal breaker.
-
-
+https://github.com/matthieu-beteille/cljs-css-modules works fine. Tests exists and pass and keyframe support is now present too.
