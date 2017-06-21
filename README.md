@@ -4,7 +4,7 @@
 Testing https://github.com/matthieu-beteille/cljs-css-modules by
 porting parts of https://github.com/css-modules/webpack-demo into a set of devcards to understand how they both work, and whether I want to go this way.
 
-###Getting started
+### Getting started
 
 Clone the repo, and run `lein cljsbuild once dev` in it. Start a local web server serving the `resources/public` folder, and then visit `cards.html`.
 
